@@ -175,8 +175,11 @@
     }
 
     @media screen and (min-width:1200px){
-        body .main-index{
+        body main .contenedor-main {
             display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(8) ;
+            grid-column:span 7 ;
         }
     }
 
@@ -215,6 +218,27 @@ main div .descripcion-producto{
     margin-bottom: 1rem;
 }
    
+@media screen and (min-width:1200px){
+    main .div-shop{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(6,0.05fr);
+        object-fit: cover;
+        gap: 2rem;
+    }
+
+    main div .ftoshop{
+        width: 18rem;
+        height: 18rem;
+        object-fit: cover;
+    }
+
+    main .nuestros-productos{
+       text-align: center;
+       margin-top: 3rem;
+       text-decoration: underline;
+    }
+}
 
 /*estilos sobre nosotros*/
 
@@ -236,8 +260,31 @@ main div .historia{
     color: whitesmoke;
     background-color: rgb(109, 63, 43);
     font-size: 1.5rem;
-    padding: 1rem;
-}
+    padding: 1rem;}
+
+    @media screen and (min-width:1200px){
+        body main .grid-sobre-nosotros {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:1 ;
+            
+        }
+        body main .sobre-nosotros{
+            margin-left: 5rem;
+            font-size: 2rem;
+        }
+        body main div .logo{
+            width: 70vh;
+            height: 80vh;
+            margin-left: 5rem;
+            margin-top: 4rem;
+            
+        }
+
+        body main div .historia{
+            margin-top: 2rem
+        }
+    }
 
 /* estilos registrarme*/
 
