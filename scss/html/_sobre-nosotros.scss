@@ -1,0 +1,63 @@
+body{
+    main{
+        h1{
+            color: rgb(109, 63, 43);
+            text-align: center;
+            margin: 1rem;
+            font-family:'Eczar', serif  ;
+            font-size: 2.3rem;
+        }
+        div{
+            .logo{
+                margin: 2rem;
+                object-fit: cover;
+                height: 60vh;
+                width: 70vh;
+                justify-content: center;
+            }
+            .historia{
+                margin-left: 2rem;
+                margin-right: 2rem;
+                text-align: justify;
+                color: whitesmoke;
+                background-color: rgb(109, 63, 43);
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                
+            }
+            }
+        }
+    }
+
+
+    @media screen and (min-width:1200px){
+        body {
+            main{
+                h1{
+                    color: forestgreen;
+                }
+
+                .sobre-nosotros{
+                    text-align: center;
+                
+                    font-size: 2rem;
+                }
+
+                div{
+                    .logo{
+                        width: 4rem;
+                        height: 30vh;
+                        margin-left: 5rem;
+                        margin-top: 4rem;
+                        
+                    }
+                    .historia{
+                        margin-top: 2rem;
+                        margin-left: 13rem;
+                    }
+                }
+            }
+    
+        }
+    }
