@@ -10,6 +10,9 @@
 
 
 body{
+    h1 * {
+        color: rgb(109, 63, 43);
+    }
     background-color: whitesmoke;
     font-family: 'Castoro', serif;
     header{
@@ -69,11 +72,7 @@ body{
                     grid-template-rows: repeat(5,100%);
                     width: 60vh;
                     height: 60vh;
-                    object-fit: cover;
-                    margin-top: 2rem;
-                    margin-left: 5rem;
-                    margin-right: 5rem;
-                }
+                    
                  
                 .descripcion-producto{
                     font-family: 'Castoro Titling';
@@ -88,43 +87,69 @@ body{
         }
     }
 }
-}
-@media screen and (min-width:1200px){
-main {
-    .div-shop{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 20%;
-        object-fit: cover;
-        gap: 2rem;
-        grid-template-areas: 
-        "img img ";
-        margin-bottom: 10rem;
-        
-    }
-    .ftoshop{
-        width: 8rem;
-        height: 8rem;
-        object-fit: cover;
-        grid-area:img;
-    }
-    .nuestros-productos{
-        text-align: center;
-        margin-top: 3rem;
-        text-decoration: underline;
-     }
-    
-}
+        }}}
 
- 
+        @media screen and (min-width:1200px){
+            main {
+            .nombre{
+                    color: rgb(109, 63, 43);
+                }
+                .nuestros-productos{
+                    margin-bottom: 3rem;
+                    text-align: center;
+                    margin-top: 3rem;
+                    color: rgb(34, 65, 59);
+                    font-style: italic;
+                 }
+                
+                .div-shop{
+                    justify-content: center;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 25%;
+                    grid-template-areas: 
+                    "img img img ";
+                    
+                    margin-left: 2.5rem;
+                    .contenedor-shop{
+                        
+                        
+                        
+                        .ftoshop{
+                                width: 25vw;
+                                height: 45vh;
+                                grid-area: img;
+                                justify-items: center;
+                                justify-content: center;
+                                margin-bottom: 0.5rem;
+                        }
+                        .descripcion-producto{
+                            text-align: justify;
+                            font-size: 1rem;
+                            text-decoration: underline;
+                            color: rgb(109, 63, 43);
+                            margin-bottom: 3rem;
+                        }
+                    }
+                }
+              
 
-
-}
-        }
-    
-
-    footer{
-        background-color: rgb(34, 65, 59);
-        color: whitesmoke;
-        font-family: 'Castoro', serif;
-    }
+                }
+               
+                 
+                
+            }
+            
+             
+            
+            
+            
+                  
+                
+            
+                footer{
+                    background-color: rgb(34, 65, 59);
+                    color: whitesmoke;
+                    font-family: 'Castoro', serif;
+                }
+            

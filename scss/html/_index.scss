@@ -175,7 +175,7 @@ footer{
                 display: grid;
                 gap: 7rem;
                 grid-template-columns: 40% 40%;
-                grid-template-rows: 20%;
+                grid-template-rows: 40%;
                 grid-template-areas: 
                 "cafe foto",
                 "texto foto",
@@ -204,36 +204,41 @@ footer{
                 }
             }
         }
-        .linea-marron{
-            width: 90%;
-            height: 1vh;
-            object-fit: cover;
-        }
+        
+            .linea-marron{
+                width: 100%;
+                height: 1vh;
+               justify-self: center;
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+            }
+        
+        
         .populares{
+            float: left;
             font-size: 2rem;
             text-align: center;
         }
         .productos-home{
             
-            .contenedor-descripcion{
-                grid-area: descripcion;
-            }
+            
             .product{
-                .img-producto{
+                
                     margin-top: 2rem;
                     height: 40vh;
-                    width: 25vw;
+                    width: 55vw;
                     grid-area: img;
-                }
-                grid-area: img;
+                
+               
             }
             
             display: grid;
             gap: 4rem;
             grid-template-columns:  repeat(3,1fr);
-            grid-template-rows:20%;
+            grid-template-rows:40%;
             grid-template-areas: 
-            "img",
+            "img img img",
             
             ;
         }
