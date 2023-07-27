@@ -88,11 +88,13 @@ header {
     color: #22413b;
     font-style: oblique;
     font-family: 'Castoro', serif;
-    font-family: 'Castoro Titling', cursive; }
+    font-family: 'Castoro Titling', cursive;
+    margin-bottom: 2rem; }
   .main-index div div div .contenedor-descripcion {
     font-size: 1.2rem;
     font-family: 'Castoro', serif;
-    text-decoration: underline; }
+    text-decoration: underline;
+    margin-bottom: 2rem; }
 
 footer {
   background-color: #22413b;
@@ -139,91 +141,47 @@ footer {
       body main .contenedor-main .caja .contenedor-texto p {
         text-align: center;
         margin-bottom: 4rem; }
-  body main .linea-marron {
-    width: 100%;
-    height: 1vh;
-    justify-self: center;
-    display: flex;
-    justify-items: center;
-    justify-content: center; }
-  body main .populares {
-    float: left;
-    font-size: 2rem;
-    text-align: center; }
-  body main .productos-home {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40%;
-    grid-template-areas: "img img img"; }
-    body main .productos-home .product {
-      margin-top: 2rem;
-      height: 40vh;
-      width: 55vw;
-      grid-area: img; } }
+    body main .contenedor-main div .populares {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    body main .contenedor-main .productos-home {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "img img img"; }
+      body main .contenedor-main .productos-home div .product {
+        grid-area: img;
+        height: 70vh;
+        width: 30vw;
+        display: grid; } }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background-color: whitesmoke;
-  font-family: 'Castoro', serif; }
-  body h1 * {
-    color: #6d3f2b; }
-  body header {
-    background-color: #22413b;
-    display: flex;
-    color: whitesmoke;
-    padding: 1.5rem;
-    font-family: 'Castoro Titling';
-    font-size: 0.9rem;
-    font-style: italic; }
-    body header nav div {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      font-family: 'Castoro Titling'; }
-      body header nav div ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        font-family: 'Castoro Titling'; }
-        body header nav div ul li a {
-          text-decoration: none;
-          color: whitesmoke;
-          display: flex;
-          font-family: 'Castoro Titling'; }
-  body main h1 {
-    color: #6d3f2b;
+body main .nuestros-productos {
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #22413b;
+  font-style: italic; }
+
+body main div .contenedor-shop {
+  justify-content: center; }
+  body main div .contenedor-shop .ftoshop {
+    width: 75vw;
+    height: 65vh;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-top: 1rem; }
+  body main div .contenedor-shop .descripcion-producto {
     text-align: center;
-    margin: 1rem;
-    font-family: 'Eczar', serif;
-    font-size: 2.3rem; }
-    body main h1 h2 {
-      margin: 1rem;
-      color: #22413b;
-      font-style: italic;
-      font-family: 'Castoro Titling';
-      text-align: center;
-      margin-top: 3rem;
-      text-decoration: underline; }
-    body main h1 div div .ftoshop {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, 100%);
-      width: 60vh;
-      height: 60vh; }
-      body main h1 div div .ftoshop .descripcion-producto {
-        font-family: 'Castoro Titling';
-        font-family: 'Castoro', serif;
-        text-align: center;
-        font-size: 1.3rem;
-        color: #6d3f2b;
-        text-decoration: underline;
-        margin-bottom: 1rem; }
+    font-size: 1.3rem;
+    color: #6d3f2b;
+    text-decoration: underline;
+    margin-bottom: 2.5rem; }
 
 @media screen and (min-width: 1200px) {
   main .nombre {

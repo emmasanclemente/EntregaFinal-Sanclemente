@@ -123,12 +123,14 @@ header{
                     font-style: oblique;
                     font-family: 'Castoro', serif;
                     font-family: 'Castoro Titling', cursive;
+                    margin-bottom: 2rem;
                 }
                 div{
                     .contenedor-descripcion{
                         font-size: 1.2rem;
                         font-family: 'Castoro', serif;
                         text-decoration: underline;
+                        margin-bottom: 2rem;
                     }
                 }
             }
@@ -164,84 +166,76 @@ footer{
 
 @media screen and (min-width:1200px){
    body{
-    main{
-        .titulo-principal{
-            font-size: 4rem;
-        }
-        .contenedor-main{
-            margin-top: 1rem;
-            .caja{
-                margin: 0rem 7rem 0rem;
-                display: grid;
-                gap: 7rem;
-                grid-template-columns: 40% 40%;
-                grid-template-rows: 40%;
-                grid-template-areas: 
-                "cafe foto",
-                "texto foto",
-                "boton foto",
-                "unite foto"
-                ;
+        main{
+            .titulo-principal{
+                font-size: 4rem;
+            }
+            .contenedor-main{
+                margin-top: 1rem;
+                .caja{
+                    margin: 0rem 7rem 0rem;
+                    display: grid;
+                    gap: 7rem;
+                    grid-template-columns: 40% 40%;
+                    grid-template-rows: 40%;
+                    grid-template-areas: 
+                    "cafe foto",
+                    "texto foto",
+                    "boton foto",
+                    "unite foto"
+                    ;
+                    div{
+                        margin-top: 1rem;
+                    }
+                    .contenedor-texto{
+                        .titulo-secundario{
+                            font-size: 2.7rem;
+                        }
+                        .texto-principal{
+                            font-size: 1.5rem;
+                        }
+                        button{
+                            margin-bottom: 1rem;
+                            padding: 0.5rem;
+                            
+                        }
+                        p{
+                            text-align: center;
+                            margin-bottom: 4rem;
+                        }
+                    }
+
+                }
                 div{
-                    margin-top: 1rem;
-                }
-                .contenedor-texto{
-                    .titulo-secundario{
-                        font-size: 2.7rem;
-                    }
-                    .texto-principal{
-                        font-size: 1.5rem;
-                    }
-                    button{
-                        margin-bottom: 1rem;
-                        padding: 0.5rem;
-                        
-                    }
-                    p{
+                    .populares{
                         text-align: center;
-                        margin-bottom: 4rem;
+                        margin-top: 1rem;
+                        margin-bottom: 2rem;
                     }
                 }
-            }
-        }
-        
-            .linea-marron{
-                width: 100%;
-                height: 1vh;
-               justify-self: center;
-                display: flex;
-                justify-items: center;
-                justify-content: center;
-            }
-        
-        
-        .populares{
-            float: left;
-            font-size: 2rem;
-            text-align: center;
-        }
-        .productos-home{
-            
-            
-            .product{
+                .productos-home{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "img img img";
+                    div{
+                        .product{
+                            grid-area: img;
+                            height: 70vh;
+                            width: 30vw;
+                            display: grid;
+                        }
+                    }
+                    
+                }
                 
-                    margin-top: 2rem;
-                    height: 40vh;
-                    width: 55vw;
-                    grid-area: img;
+
+            
                 
-               
+        
             }
-            
-            display: grid;
-            gap: 4rem;
-            grid-template-columns:  repeat(3,1fr);
-            grid-template-rows:40%;
-            grid-template-areas: 
-            "img img img",
-            
-            ;
+        
         }
     }
-   }
 }
