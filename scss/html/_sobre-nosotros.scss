@@ -35,32 +35,44 @@ body{
 
 
     @media screen and (min-width:1200px){
-        body {
+        .body-sobre-nosotros {
             main{
-                h1{
-                    color: forestgreen;
-                }
+                
 
                 .sobre-nosotros{
                     text-align: center;
                 
                     font-size: 2rem;
                 }
-
                 div{
-                    .logo{
-                        width: 4rem;
-                        height: 30vh;
-                        margin-left: 5rem;
-                        margin-top: 4rem;
+                    display: grid;
+                    grid-template-columns: repeat(1.5, 70%);
+                    grid-template-rows: 14;
+                    grid-template-areas: "logo p";
+                    div{
+                        .logo{
+                            grid-area: logo;
+                            margin-left: 4rem;
+                            
+                        }
+                    }
+                    div{
                         
+                        .historia{
+                            align-content: center;
+                            align-self: center;
+                            align-items: center;
+                            grid-area: p;
+                            margin-bottom: 2rem;
+                        }
+                    
                     }
-                    .historia{
-                        margin-top: 2rem;
-                        margin-left: 13rem;
+                    div{
+                        img{
+                            margin-left: 5rem;
+                            height: 60vh;
+                        }
                     }
-                }
-            }
-    
+                                }}
         }
     }

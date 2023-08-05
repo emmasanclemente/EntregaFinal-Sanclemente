@@ -6,116 +6,114 @@
 body {
   background-color: whitesmoke;
   font-family: 'Castoro', serif; }
-
-header {
-  background-color: #22413b;
-  display: flex;
-  color: whitesmoke;
-  padding: 1.5rem;
-  font-family: 'Castoro Titling';
-  font-size: 0.9rem;
-  font-style: italic; }
-  header nav div {
-    list-style: none;
+  body header {
+    background-color: #22413b;
     display: flex;
-    gap: 2rem;
-    font-family: 'Castoro Titling'; }
-    header nav div ul {
+    color: whitesmoke;
+    padding: 1.5rem;
+    font-family: 'Castoro Titling';
+    font-size: 0.9rem;
+    font-style: italic; }
+    body header nav div {
       list-style: none;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      gap: 2rem;
       font-family: 'Castoro Titling'; }
-      header nav div ul li a {
-        text-decoration: none;
+      body header nav div ul {
+        list-style: none;
         display: flex;
-        font-family: 'Castoro Titling';
-        color: whitesmoke; }
-
-.main-index {
-  color: #6d3f2b;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  text-align: center; }
-  .main-index h1 {
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Castoro Titling'; }
+        body header nav div ul li a {
+          text-decoration: none;
+          display: flex;
+          font-family: 'Castoro Titling';
+          color: whitesmoke; }
+  body .main-index {
+    background-color: whitesmoke;
     color: #6d3f2b;
-    text-align: center;
-    margin: 1rem;
-    font-family: 'Eczar', serif;
-    font-size: 2.3rem; }
-  .main-index div div img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover; }
-  .main-index div div div .texto-principal {
-    font-family: 'Castoro', serif;
-    color: #6d3f2b;
-    font-size: 1.4rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    text-align: justify; }
-  .main-index div div div .titulo-secundario {
-    margin-top: 1.5rem;
-    font-size: 2rem;
-    color: whitesmoke;
-    background-color: #22413b;
-    font-style: oblique;
-    font-family: 'Castoro', serif;
-    font-family: 'Castoro Titling', cursive; }
-  .main-index div div div .unite {
-    font-family: 'Castoro', serif;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    margin-top: 0.5rem; }
-  .main-index div div div button .boton {
-    font-style: none;
-    text-decoration: none;
-    font-family: 'Castoro', serif;
-    color: whitesmoke;
-    background-color: #22413b;
-    padding: 2rem;
-    font-size: 1rem;
-    margin-top: 2.5rem; }
-  .main-index div .linea-marron {
-    width: 90%;
-    height: 1vh;
-    object-fit: cover; }
-  .main-index div div .populares {
-    margin-top: 1.5rem;
-    font-size: 1.7rem;
-    color: #22413b;
-    font-style: oblique;
-    font-family: 'Castoro', serif;
-    font-family: 'Castoro Titling', cursive;
-    margin-bottom: 2rem; }
-  .main-index div div div .contenedor-descripcion {
-    font-size: 1.2rem;
-    font-family: 'Castoro', serif;
-    text-decoration: underline;
-    margin-bottom: 2rem; }
-
-footer {
-  background-color: #22413b;
-  color: whitesmoke;
-  font-family: 'Castoro', serif; }
-  footer div {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
-    footer div h3 {
-      padding: 1rem;
-      font-family: 'Castoro', serif; }
-    footer div img {
-      height: 7vh;
-      margin-bottom: 2rem;
-      margin-left: 0.3rem;
-      margin-right: 0.3rem; }
-    footer div p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center; }
+    body .main-index h1 {
+      color: #6d3f2b;
       text-align: center;
-      padding-bottom: 2rem;
-      font-family: 'Castoro', serif; }
+      margin: 1rem;
+      font-family: 'Eczar', serif;
+      font-size: 2.3rem; }
+    body .main-index div div img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover; }
+    body .main-index div div div .texto-principal {
+      font-family: 'Castoro', serif;
+      color: #6d3f2b;
+      font-size: 1.4rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: justify; }
+    body .main-index div div div .titulo-secundario {
+      margin-top: 1.5rem;
+      font-size: 2rem;
+      color: whitesmoke;
+      background-color: #22413b;
+      font-style: oblique;
+      font-family: 'Castoro', serif;
+      font-family: 'Castoro Titling', cursive; }
+    body .main-index div div div .unite {
+      font-family: 'Castoro', serif;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      margin-top: 0.5rem; }
+    body .main-index div div div button .boton {
+      font-style: none;
+      text-decoration: none;
+      font-family: 'Castoro', serif;
+      color: whitesmoke;
+      background-color: #22413b;
+      padding: 0.2rem;
+      font-size: 1rem;
+      margin-top: 2.5rem; }
+    body .main-index div .linea-marron {
+      width: 90%;
+      height: 1vh;
+      object-fit: cover; }
+    body .main-index div div .populares {
+      margin-top: 1.5rem;
+      font-size: 1.7rem;
+      color: #22413b;
+      font-style: oblique;
+      font-family: 'Castoro', serif;
+      font-family: 'Castoro Titling', cursive;
+      margin-bottom: 2rem; }
+    body .main-index div div div .contenedor-descripcion {
+      font-size: 1.2rem;
+      font-family: 'Castoro', serif;
+      text-decoration: underline;
+      margin-bottom: 2rem; }
+  body footer {
+    background-color: #22413b;
+    color: whitesmoke;
+    font-family: 'Castoro', serif; }
+    body footer div {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem; }
+      body footer div h3 {
+        padding: 1rem;
+        font-family: 'Castoro', serif; }
+      body footer div img {
+        height: 7vh;
+        margin-bottom: 2rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem; }
+      body footer div p {
+        text-align: center;
+        padding-bottom: 2rem;
+        font-family: 'Castoro', serif; }
 
 @media screen and (min-width: 1200px) {
   body main .titulo-principal {
@@ -137,7 +135,8 @@ footer {
         font-size: 1.5rem; }
       body main .contenedor-main .caja .contenedor-texto button {
         margin-bottom: 1rem;
-        padding: 0.5rem; }
+        padding: 0.5rem;
+        background-color: #22413b; }
       body main .contenedor-main .caja .contenedor-texto p {
         text-align: center;
         margin-bottom: 4rem; }
@@ -150,11 +149,14 @@ footer {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       grid-template-areas: "img img img"; }
-      body main .contenedor-main .productos-home div .product {
-        grid-area: img;
-        height: 70vh;
-        width: 30vw;
-        display: grid; } }
+      body main .contenedor-main .productos-home div {
+        margin-bottom: 2rem; }
+        body main .contenedor-main .productos-home div .product {
+          grid-area: img;
+          height: 70vh;
+          width: 30vw;
+          display: grid;
+          margin-bottom: 1rem; } }
 
 * {
   margin: 0;
@@ -197,8 +199,7 @@ body main div .contenedor-shop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 25%;
-    grid-template-areas: "img img img ";
-    margin-left: 2.5rem; }
+    grid-template-areas: "img img img "; }
     main .div-shop .contenedor-shop .ftoshop {
       width: 25vw;
       height: 45vh;
@@ -207,7 +208,7 @@ body main div .contenedor-shop {
       justify-content: center;
       margin-bottom: 0.5rem; }
     main .div-shop .contenedor-shop .descripcion-producto {
-      text-align: justify;
+      text-align: center;
       font-size: 1rem;
       text-decoration: underline;
       color: #6d3f2b;
@@ -217,6 +218,31 @@ footer {
   background-color: #22413b;
   color: whitesmoke;
   font-family: 'Castoro', serif; }
+
+body main .tu-carrito {
+  display: grid; }
+
+body main .tituto {
+  color: #6d3f2b;
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Eczar', serif;
+  font-size: 2.3rem; }
+
+body main h2 {
+  color: #22413b;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.7rem;
+  font-style: italic; }
+
+body main form {
+  color: #6d3f2b;
+  outline-style: none;
+  font-family: 'CASTORO', serif;
+  font-style: italic; }
+  body main form fieldset legend {
+    margin: 1rem; }
 
 body main h1 {
   color: #6d3f2b;
@@ -242,16 +268,23 @@ body main div .historia {
   padding: 1rem; }
 
 @media screen and (min-width: 1200px) {
-  body main h1 {
-    color: forestgreen; }
-  body main .sobre-nosotros {
+  .body-sobre-nosotros main .sobre-nosotros {
     text-align: center;
     font-size: 2rem; }
-  body main div .logo {
-    width: 4rem;
-    height: 30vh;
-    margin-left: 5rem;
-    margin-top: 4rem; }
-  body main div .historia {
-    margin-top: 2rem;
-    margin-left: 13rem; } }
+  .body-sobre-nosotros main div {
+    display: grid;
+    grid-template-columns: repeat(1.5, 70%);
+    grid-template-rows: 14;
+    grid-template-areas: "logo p"; }
+    .body-sobre-nosotros main div div .logo {
+      grid-area: logo;
+      margin-left: 4rem; }
+    .body-sobre-nosotros main div div .historia {
+      align-content: center;
+      align-self: center;
+      align-items: center;
+      grid-area: p;
+      margin-bottom: 2rem; }
+    .body-sobre-nosotros main div div img {
+      margin-left: 5rem;
+      height: 60vh; } }
