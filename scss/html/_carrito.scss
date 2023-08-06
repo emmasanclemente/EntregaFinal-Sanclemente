@@ -5,9 +5,149 @@ body{
         .tu-carrito{
             display: grid;
          .titulo-carrito{
+                text-align: left;
+                margin-left: 2rem;
+            }
+            .linea-marron{
+                height: 1vh;
+                width: 90vw;
+                margin-left: 2rem;
+            }
+            .div-carrito{
                 
+                    display: grid;
+                    grid-template-columns: 40% 40% ;
+                    grid-template-rows: 230px;
+                    grid-gap: 80px;
+                
+
+                .producto-carrito{
+                    
+                    .img-carrito{
+                            grid-column: 1;
+                        width: 32vw;
+                        height: 27vh;
+                        margin-left: 3rem;
+                        margin-top: 3rem;
+                        object-fit: cover;
+                        
+                        
+                    }
+                    p{
+                        grid-column: 2 ;
+                        color:$color-terceario ;
+                        font-size: 1rem;
+                        text-align: center;
+                        margin-left:2rem;
+                        font-family: $font-principal;
+                        
+                       
+                    }
+                    .eliminar{
+                        grid-column: 3 ;
+                        color: $color-secundario;
+                        background-color:$color-principal;
+                        padding: 0.3rem;
+                        border: none;
+                        font-family: $font-principal;
+                        font-size: 1rem;
+                        text-align: center;
+                        justify-content: center;
+                        margin-left: 6rem;
+                        margin-top: 1rem;
+                        margin-bottom: 3rem;
+                        
+                    }
+                    margin-bottom: 1rem;
+                }
+            }
+            .boton-compra{
+                color: $color-secundario;
+                background-color: $color-principal;
+                border: none;
+                width: 20vw;
+                font-style: italic;
+                padding: 0.3rem;
+                align-self: center;
+                font-family:$font-principal ;
+                font-size: 1.1rem;
+                margin-left: 14rem;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
             }
         }
-
-        }
     }
+}
+
+@media screen and (min-width:1200px){
+     body{
+        main{
+           
+            .tu-carrito{
+                .div-carrito{
+                   
+                    div{
+                        justify-content: center;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 30REM;
+                    grid-template-areas: 
+                    "img img img ";
+                        .img-carrito{
+                            
+                            width: 10vw;
+                            height: 10vh;
+                       
+                       
+                        
+                        
+                    }
+                    p{
+                       
+                        color:$color-terceario ;
+                        font-size: 3rem;
+                        text-align: center;
+                       
+                        margin-left:0.5rem;
+                        font-family: $font-principal;
+                        
+                       
+                    }
+                    .eliminar{
+                        
+                        color: $color-secundario;
+                        background-color:$color-principal;
+                        padding: 0.3rem;
+                        border: none;
+                        font-family: $font-principal;
+                        font-size: 1rem;
+                        text-align: center;
+                        justify-content: center;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                        margin-bottom: 3rem;
+                        
+                    }
+                    }
+                }
+                .boton-compra{
+                    color: $color-secundario;
+                    background-color: $color-principal;
+                    border: none;
+                    width: 20vw;
+                    font-style: italic;
+                    padding: 0.3rem;
+                    align-self: center;
+                    font-family:$font-principal ;
+                    font-size: 1.1rem;
+                    margin-left: 1rem;
+                    margin-top: 3rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+     }
+
+
+    }  
+    
